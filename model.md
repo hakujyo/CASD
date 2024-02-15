@@ -13,13 +13,21 @@
 并根据 mysite/settings.py 文件中的数据库配置和随应用提供的数据库迁移文件， 创建任何必要的数据库表。
 
 这个 migrate 命令选中所有还没有执行过的迁移（Django 通过在数据库中创建一个特殊的表 django_migrations 来跟踪执行过哪些迁移）并应用在数据库上 - 也就是将你对模型的更改同步到数据库结构上。
-> python manage.py migrate
+```
+python manage.py migrate
+```
 
 通过运行 makemigrations 命令，Django 会检测你对模型文件的修改（在这种情况下，你已经取得了新的），并且把修改的部分储存为一次 迁移。
-> python manage.py makemigrations polls
+```
+python manage.py makemigrations polls
+```
 
 sqlmigrate 命令接收一个迁移的名称，然后返回对应的 SQL
-> python manage.py sqlmigrate polls 0001
+```
+python manage.py sqlmigrate polls 0001
+```
 
 检查项目中的问题，并且在检查过程中不会对数据库进行任何操作
-> python manage.py check
+```
+python manage.py check
+```
