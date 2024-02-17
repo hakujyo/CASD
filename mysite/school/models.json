@@ -1,0 +1,15 @@
+{
+    "tableName": "Student",
+    "fields": {
+      "name": {
+        "type": "string",
+        "max_length": 10
+      },
+      "age": {
+        "type": "int"
+      },
+      "number": {
+        "type": "int"
+      }
+    }
+}
